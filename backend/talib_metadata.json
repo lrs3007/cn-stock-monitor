@@ -1,0 +1,7607 @@
+{
+  "version": "0.8.3",
+  "functions": {
+    "HT_DCPERIOD": {
+      "info": {
+        "name": "HT_DCPERIOD",
+        "group": "Cycle Indicators",
+        "display_name": "Hilbert Transform - Dominant Cycle Period",
+        "function_flags": [
+          "Uses a transcendental math function",
+          "Function has a streaming API",
+          "Function has an unstable period"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {},
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "HT_DCPHASE": {
+      "info": {
+        "name": "HT_DCPHASE",
+        "group": "Cycle Indicators",
+        "display_name": "Hilbert Transform - Dominant Cycle Phase",
+        "function_flags": [
+          "Uses a transcendental math function",
+          "Function has a streaming API",
+          "Function has an unstable period"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {},
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "HT_PHASOR": {
+      "info": {
+        "name": "HT_PHASOR",
+        "group": "Cycle Indicators",
+        "display_name": "Hilbert Transform - Phasor Components",
+        "function_flags": [
+          "Uses a transcendental math function",
+          "Function has a streaming API",
+          "Function has an unstable period"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {},
+        "output_flags": {
+          "inphase": [
+            "Line"
+          ],
+          "quadrature": [
+            "Dashed Line"
+          ]
+        },
+        "output_names": [
+          "inphase",
+          "quadrature"
+        ]
+      },
+      "integer_outputs": [
+        false,
+        false
+      ]
+    },
+    "HT_SINE": {
+      "info": {
+        "name": "HT_SINE",
+        "group": "Cycle Indicators",
+        "display_name": "Hilbert Transform - SineWave",
+        "function_flags": [
+          "Uses a transcendental math function",
+          "Function has a streaming API",
+          "Function has an unstable period"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {},
+        "output_flags": {
+          "sine": [
+            "Line"
+          ],
+          "leadsine": [
+            "Dashed Line"
+          ]
+        },
+        "output_names": [
+          "sine",
+          "leadsine"
+        ]
+      },
+      "integer_outputs": [
+        false,
+        false
+      ]
+    },
+    "HT_TRENDMODE": {
+      "info": {
+        "name": "HT_TRENDMODE",
+        "group": "Cycle Indicators",
+        "display_name": "Hilbert Transform - Trend vs Cycle Mode",
+        "function_flags": [
+          "Uses a transcendental math function",
+          "Function has a streaming API",
+          "Function has an unstable period"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "SWAK_2PHP": {
+      "info": {
+        "name": "SWAK_2PHP",
+        "group": "Cycle Indicators",
+        "display_name": "Swiss Army Knife - Two-Pole High-Pass Filter",
+        "function_flags": [
+          "Uses a transcendental math function",
+          "Function has a streaming API",
+          "Function has an unstable period"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 20
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "SWAK_BP": {
+      "info": {
+        "name": "SWAK_BP",
+        "group": "Cycle Indicators",
+        "display_name": "Swiss Army Knife - Band-Pass Filter",
+        "function_flags": [
+          "Uses a transcendental math function",
+          "Function has a streaming API",
+          "Function has an unstable period"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 20,
+          "delta": 0.1
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "SWAK_HP": {
+      "info": {
+        "name": "SWAK_HP",
+        "group": "Cycle Indicators",
+        "display_name": "Swiss Army Knife - High-Pass Filter",
+        "function_flags": [
+          "Uses a transcendental math function",
+          "Function has a streaming API",
+          "Function has an unstable period"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 20
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "ADD": {
+      "info": {
+        "name": "ADD",
+        "group": "Math Operators",
+        "display_name": "Vector Arithmetic Add",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price0": "high",
+          "price1": "low"
+        },
+        "parameters": {},
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "CUMSUM": {
+      "info": {
+        "name": "CUMSUM",
+        "group": "Math Operators",
+        "display_name": "Cumulative Sum",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is path-dependent"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {},
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "DIV": {
+      "info": {
+        "name": "DIV",
+        "group": "Math Operators",
+        "display_name": "Vector Arithmetic Div",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output can be NaN or infinite"
+        ],
+        "input_names": {
+          "price0": "high",
+          "price1": "low"
+        },
+        "parameters": {},
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "MAX": {
+      "info": {
+        "name": "MAX",
+        "group": "Math Operators",
+        "display_name": "Highest value over a specified period",
+        "function_flags": [
+          "Output scale same as input",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 30
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "MAXINDEX": {
+      "info": {
+        "name": "MAXINDEX",
+        "group": "Math Operators",
+        "display_name": "Index of highest value over a specified period",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 30
+        },
+        "output_flags": {
+          "integer": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "MIN": {
+      "info": {
+        "name": "MIN",
+        "group": "Math Operators",
+        "display_name": "Lowest value over a specified period",
+        "function_flags": [
+          "Output scale same as input",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 30
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "MININDEX": {
+      "info": {
+        "name": "MININDEX",
+        "group": "Math Operators",
+        "display_name": "Index of lowest value over a specified period",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 30
+        },
+        "output_flags": {
+          "integer": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "MINMAX": {
+      "info": {
+        "name": "MINMAX",
+        "group": "Math Operators",
+        "display_name": "Lowest and highest values over a specified period",
+        "function_flags": [
+          "Output scale same as input",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 30
+        },
+        "output_flags": {
+          "min": [
+            "Line"
+          ],
+          "max": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "min",
+          "max"
+        ]
+      },
+      "integer_outputs": [
+        false,
+        false
+      ]
+    },
+    "MINMAXINDEX": {
+      "info": {
+        "name": "MINMAXINDEX",
+        "group": "Math Operators",
+        "display_name": "Indexes of lowest and highest values over a specified period",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 30
+        },
+        "output_flags": {
+          "minidx": [
+            "Line"
+          ],
+          "maxidx": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "minidx",
+          "maxidx"
+        ]
+      },
+      "integer_outputs": [
+        true,
+        true
+      ]
+    },
+    "MULT": {
+      "info": {
+        "name": "MULT",
+        "group": "Math Operators",
+        "display_name": "Vector Arithmetic Mult",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price0": "high",
+          "price1": "low"
+        },
+        "parameters": {},
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "SUB": {
+      "info": {
+        "name": "SUB",
+        "group": "Math Operators",
+        "display_name": "Vector Arithmetic Subtraction",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price0": "high",
+          "price1": "low"
+        },
+        "parameters": {},
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "SUM": {
+      "info": {
+        "name": "SUM",
+        "group": "Math Operators",
+        "display_name": "Summation",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 30
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "ACOS": {
+      "info": {
+        "name": "ACOS",
+        "group": "Math Transform",
+        "display_name": "Vector Trigonometric ACos",
+        "function_flags": [
+          "Uses a transcendental math function",
+          "Function has a streaming API",
+          "Output can be NaN or infinite"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {},
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "ASIN": {
+      "info": {
+        "name": "ASIN",
+        "group": "Math Transform",
+        "display_name": "Vector Trigonometric ASin",
+        "function_flags": [
+          "Uses a transcendental math function",
+          "Function has a streaming API",
+          "Output can be NaN or infinite"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {},
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "ATAN": {
+      "info": {
+        "name": "ATAN",
+        "group": "Math Transform",
+        "display_name": "Vector Trigonometric ATan",
+        "function_flags": [
+          "Uses a transcendental math function",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {},
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "CEIL": {
+      "info": {
+        "name": "CEIL",
+        "group": "Math Transform",
+        "display_name": "Vector Ceil",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {},
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "COS": {
+      "info": {
+        "name": "COS",
+        "group": "Math Transform",
+        "display_name": "Vector Trigonometric Cos",
+        "function_flags": [
+          "Uses a transcendental math function",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {},
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "COSH": {
+      "info": {
+        "name": "COSH",
+        "group": "Math Transform",
+        "display_name": "Vector Trigonometric Cosh",
+        "function_flags": [
+          "Uses a transcendental math function",
+          "Function has a streaming API",
+          "Output can be NaN or infinite"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {},
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "EXP": {
+      "info": {
+        "name": "EXP",
+        "group": "Math Transform",
+        "display_name": "Vector Arithmetic Exp",
+        "function_flags": [
+          "Uses a transcendental math function",
+          "Function has a streaming API",
+          "Output can be NaN or infinite"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {},
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "FLOOR": {
+      "info": {
+        "name": "FLOOR",
+        "group": "Math Transform",
+        "display_name": "Vector Floor",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {},
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "LN": {
+      "info": {
+        "name": "LN",
+        "group": "Math Transform",
+        "display_name": "Vector Log Natural",
+        "function_flags": [
+          "Uses a transcendental math function",
+          "Input must be positive",
+          "Function has a streaming API",
+          "Output can be NaN or infinite"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {},
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "LOG10": {
+      "info": {
+        "name": "LOG10",
+        "group": "Math Transform",
+        "display_name": "Vector Log10",
+        "function_flags": [
+          "Uses a transcendental math function",
+          "Input must be positive",
+          "Function has a streaming API",
+          "Output can be NaN or infinite"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {},
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "SIN": {
+      "info": {
+        "name": "SIN",
+        "group": "Math Transform",
+        "display_name": "Vector Trigonometric Sin",
+        "function_flags": [
+          "Uses a transcendental math function",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {},
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "SINH": {
+      "info": {
+        "name": "SINH",
+        "group": "Math Transform",
+        "display_name": "Vector Trigonometric Sinh",
+        "function_flags": [
+          "Uses a transcendental math function",
+          "Function has a streaming API",
+          "Output can be NaN or infinite"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {},
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "SQRT": {
+      "info": {
+        "name": "SQRT",
+        "group": "Math Transform",
+        "display_name": "Vector Square Root",
+        "function_flags": [
+          "Input must be positive",
+          "Function has a streaming API",
+          "Output can be NaN or infinite"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {},
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "TAN": {
+      "info": {
+        "name": "TAN",
+        "group": "Math Transform",
+        "display_name": "Vector Trigonometric Tan",
+        "function_flags": [
+          "Uses a transcendental math function",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {},
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "TANH": {
+      "info": {
+        "name": "TANH",
+        "group": "Math Transform",
+        "display_name": "Vector Trigonometric Tanh",
+        "function_flags": [
+          "Uses a transcendental math function",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {},
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "AC": {
+      "info": {
+        "name": "AC",
+        "group": "Momentum Indicators",
+        "display_name": "Accelerator/Decelerator Oscillator",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low"
+          ]
+        },
+        "parameters": {
+          "fastperiod": 5,
+          "slowperiod": 34,
+          "signalperiod": 5
+        },
+        "output_flags": {
+          "real": [
+            "Histogram"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "ADX": {
+      "info": {
+        "name": "ADX",
+        "group": "Momentum Indicators",
+        "display_name": "Average Directional Movement Index",
+        "function_flags": [
+          "Function has a streaming API",
+          "Function has an unstable period"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {
+          "timeperiod": 14
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "ADXR": {
+      "info": {
+        "name": "ADXR",
+        "group": "Momentum Indicators",
+        "display_name": "Average Directional Movement Index Rating",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {
+          "timeperiod": 14
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "AO": {
+      "info": {
+        "name": "AO",
+        "group": "Momentum Indicators",
+        "display_name": "Awesome Oscillator",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low"
+          ]
+        },
+        "parameters": {
+          "fastperiod": 5,
+          "slowperiod": 34
+        },
+        "output_flags": {
+          "real": [
+            "Histogram"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "APO": {
+      "info": {
+        "name": "APO",
+        "group": "Momentum Indicators",
+        "display_name": "Absolute Price Oscillator",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "fastperiod": 12,
+          "slowperiod": 26,
+          "matype": 1
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "AROON": {
+      "info": {
+        "name": "AROON",
+        "group": "Momentum Indicators",
+        "display_name": "Aroon",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low"
+          ]
+        },
+        "parameters": {
+          "timeperiod": 14
+        },
+        "output_flags": {
+          "aroondown": [
+            "Dashed Line"
+          ],
+          "aroonup": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "aroondown",
+          "aroonup"
+        ]
+      },
+      "integer_outputs": [
+        false,
+        false
+      ]
+    },
+    "AROONOSC": {
+      "info": {
+        "name": "AROONOSC",
+        "group": "Momentum Indicators",
+        "display_name": "Aroon Oscillator",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low"
+          ]
+        },
+        "parameters": {
+          "timeperiod": 14
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "ASI": {
+      "info": {
+        "name": "ASI",
+        "group": "Momentum Indicators",
+        "display_name": "Wilder Accumulative Swing Index",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is path-dependent"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {
+          "limitmove": 3.0
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "BOP": {
+      "info": {
+        "name": "BOP",
+        "group": "Momentum Indicators",
+        "display_name": "Balance Of Power",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "CCI": {
+      "info": {
+        "name": "CCI",
+        "group": "Momentum Indicators",
+        "display_name": "Commodity Channel Index",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {
+          "timeperiod": 14
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "CG": {
+      "info": {
+        "name": "CG",
+        "group": "Momentum Indicators",
+        "display_name": "Center of Gravity Oscillator",
+        "function_flags": [
+          "Input must be positive",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 10
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "CHOP": {
+      "info": {
+        "name": "CHOP",
+        "group": "Momentum Indicators",
+        "display_name": "Choppiness Index",
+        "function_flags": [
+          "Uses a transcendental math function",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {
+          "timeperiod": 14
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "CHOPTR": {
+      "info": {
+        "name": "CHOPTR",
+        "group": "Momentum Indicators",
+        "display_name": "Choppiness Index (True Range Box)",
+        "function_flags": [
+          "Uses a transcendental math function",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {
+          "timeperiod": 14
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "CMO": {
+      "info": {
+        "name": "CMO",
+        "group": "Momentum Indicators",
+        "display_name": "Chande Momentum Oscillator",
+        "function_flags": [
+          "Function has a streaming API",
+          "Function has an unstable period"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 14
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "CMOU": {
+      "info": {
+        "name": "CMOU",
+        "group": "Momentum Indicators",
+        "display_name": "Chande Momentum Oscillator (Unsmoothed)",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 14
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "COPPOCK": {
+      "info": {
+        "name": "COPPOCK",
+        "group": "Momentum Indicators",
+        "display_name": "Coppock Curve",
+        "function_flags": [
+          "Input must be positive",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "wmaperiod": 10,
+          "roc1period": 11,
+          "roc2period": 14
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "CRSI": {
+      "info": {
+        "name": "CRSI",
+        "group": "Momentum Indicators",
+        "display_name": "Connors Relative Strength Index",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 3,
+          "streakperiod": 2,
+          "rankperiod": 100
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "CTI": {
+      "info": {
+        "name": "CTI",
+        "group": "Momentum Indicators",
+        "display_name": "Correlation Trend Indicator",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 20
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "DOSC": {
+      "info": {
+        "name": "DOSC",
+        "group": "Momentum Indicators",
+        "display_name": "Derivative Oscillator",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 14,
+          "firstperiod": 5,
+          "secondperiod": 3,
+          "signalperiod": 9
+        },
+        "output_flags": {
+          "real": [
+            "Histogram"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "DPO": {
+      "info": {
+        "name": "DPO",
+        "group": "Momentum Indicators",
+        "display_name": "Detrended Price Oscillator",
+        "function_flags": [
+          "An output is display-shifted",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 20
+        },
+        "output_flags": {
+          "real": [
+            "Line",
+            "Output is display-shifted"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "DX": {
+      "info": {
+        "name": "DX",
+        "group": "Momentum Indicators",
+        "display_name": "Directional Movement Index",
+        "function_flags": [
+          "Function has a streaming API",
+          "Function has an unstable period"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {
+          "timeperiod": 14
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "ER": {
+      "info": {
+        "name": "ER",
+        "group": "Momentum Indicators",
+        "display_name": "Kaufman Efficiency Ratio",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 10
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "ERI": {
+      "info": {
+        "name": "ERI",
+        "group": "Momentum Indicators",
+        "display_name": "Elder Ray Index (Bull Power / Bear Power)",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {
+          "timeperiod": 13
+        },
+        "output_flags": {
+          "bullpower": [
+            "Line"
+          ],
+          "bearpower": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "bullpower",
+          "bearpower"
+        ]
+      },
+      "integer_outputs": [
+        false,
+        false
+      ]
+    },
+    "FISHER": {
+      "info": {
+        "name": "FISHER",
+        "group": "Momentum Indicators",
+        "display_name": "Fisher Transform",
+        "function_flags": [
+          "Uses a transcendental math function",
+          "Function has a streaming API",
+          "Function has an unstable period"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low"
+          ]
+        },
+        "parameters": {
+          "timeperiod": 10
+        },
+        "output_flags": {
+          "fisher": [
+            "Line"
+          ],
+          "trigger": [
+            "Dashed Line"
+          ]
+        },
+        "output_names": [
+          "fisher",
+          "trigger"
+        ]
+      },
+      "integer_outputs": [
+        false,
+        false
+      ]
+    },
+    "FOSC": {
+      "info": {
+        "name": "FOSC",
+        "group": "Momentum Indicators",
+        "display_name": "Forecast Oscillator",
+        "function_flags": [
+          "Input must be positive",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 5
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "FRACTAL": {
+      "info": {
+        "name": "FRACTAL",
+        "group": "Momentum Indicators",
+        "display_name": "Williams Fractal",
+        "function_flags": [
+          "An output is display-shifted",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low"
+          ]
+        },
+        "parameters": {
+          "leftbars": 2,
+          "rightbars": 2
+        },
+        "output_flags": {
+          "swinghigh": [
+            "Line",
+            "Pattern (Bool)",
+            "Output can be positive",
+            "Output can be zero",
+            "Output is display-shifted"
+          ],
+          "swinglow": [
+            "Line",
+            "Pattern (Bool)",
+            "Output can be positive",
+            "Output can be zero",
+            "Output is display-shifted"
+          ]
+        },
+        "output_names": [
+          "swinghigh",
+          "swinglow"
+        ]
+      },
+      "integer_outputs": [
+        true,
+        true
+      ]
+    },
+    "IBS": {
+      "info": {
+        "name": "IBS",
+        "group": "Momentum Indicators",
+        "display_name": "Internal Bar Strength",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "IMI": {
+      "info": {
+        "name": "IMI",
+        "group": "Momentum Indicators",
+        "display_name": "Intraday Momentum Index",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "close"
+          ]
+        },
+        "parameters": {
+          "timeperiod": 14
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "KDJ": {
+      "info": {
+        "name": "KDJ",
+        "group": "Momentum Indicators",
+        "display_name": "KDJ Stochastic",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {
+          "fastk_period": 9,
+          "slowk_period": 3,
+          "slowk_matype": 13,
+          "slowd_period": 3,
+          "slowd_matype": 13
+        },
+        "output_flags": {
+          "k": [
+            "Line"
+          ],
+          "d": [
+            "Line"
+          ],
+          "j": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "k",
+          "d",
+          "j"
+        ]
+      },
+      "integer_outputs": [
+        false,
+        false,
+        false
+      ]
+    },
+    "KST": {
+      "info": {
+        "name": "KST",
+        "group": "Momentum Indicators",
+        "display_name": "Know Sure Thing (Pring)",
+        "function_flags": [
+          "Input must be positive",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "roc1period": 10,
+          "roc2period": 15,
+          "roc3period": 20,
+          "roc4period": 30,
+          "sma1period": 10,
+          "sma2period": 10,
+          "sma3period": 10,
+          "sma4period": 15,
+          "signalperiod": 9
+        },
+        "output_flags": {
+          "kst": [
+            "Line"
+          ],
+          "kstsignal": [
+            "Dashed Line"
+          ]
+        },
+        "output_names": [
+          "kst",
+          "kstsignal"
+        ]
+      },
+      "integer_outputs": [
+        false,
+        false
+      ]
+    },
+    "KSTEXT": {
+      "info": {
+        "name": "KSTEXT",
+        "group": "Momentum Indicators",
+        "display_name": "Know Sure Thing with controllable MA type",
+        "function_flags": [
+          "Input must be positive",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "roc1period": 10,
+          "roc2period": 15,
+          "roc3period": 20,
+          "roc4period": 30,
+          "ma1period": 10,
+          "ma2period": 10,
+          "ma3period": 10,
+          "ma4period": 15,
+          "signalperiod": 9,
+          "rocmatype": 0,
+          "signalmatype": 0
+        },
+        "output_flags": {
+          "kst": [
+            "Line"
+          ],
+          "kstsignal": [
+            "Dashed Line"
+          ]
+        },
+        "output_names": [
+          "kst",
+          "kstsignal"
+        ]
+      },
+      "integer_outputs": [
+        false,
+        false
+      ]
+    },
+    "MACD": {
+      "info": {
+        "name": "MACD",
+        "group": "Momentum Indicators",
+        "display_name": "Moving Average Convergence/Divergence",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "fastperiod": 12,
+          "slowperiod": 26,
+          "signalperiod": 9
+        },
+        "output_flags": {
+          "macd": [
+            "Line"
+          ],
+          "macdsignal": [
+            "Dashed Line"
+          ],
+          "macdhist": [
+            "Histogram"
+          ]
+        },
+        "output_names": [
+          "macd",
+          "macdsignal",
+          "macdhist"
+        ]
+      },
+      "integer_outputs": [
+        false,
+        false,
+        false
+      ]
+    },
+    "MACDEXT": {
+      "info": {
+        "name": "MACDEXT",
+        "group": "Momentum Indicators",
+        "display_name": "MACD with controllable MA type",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "fastperiod": 12,
+          "fastmatype": 0,
+          "slowperiod": 26,
+          "slowmatype": 0,
+          "signalperiod": 9,
+          "signalmatype": 0
+        },
+        "output_flags": {
+          "macd": [
+            "Line"
+          ],
+          "macdsignal": [
+            "Dashed Line"
+          ],
+          "macdhist": [
+            "Histogram"
+          ]
+        },
+        "output_names": [
+          "macd",
+          "macdsignal",
+          "macdhist"
+        ]
+      },
+      "integer_outputs": [
+        false,
+        false,
+        false
+      ]
+    },
+    "MACDFIX": {
+      "info": {
+        "name": "MACDFIX",
+        "group": "Momentum Indicators",
+        "display_name": "Moving Average Convergence/Divergence Fix 12/26",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "signalperiod": 9
+        },
+        "output_flags": {
+          "macd": [
+            "Line"
+          ],
+          "macdsignal": [
+            "Dashed Line"
+          ],
+          "macdhist": [
+            "Histogram"
+          ]
+        },
+        "output_names": [
+          "macd",
+          "macdsignal",
+          "macdhist"
+        ]
+      },
+      "integer_outputs": [
+        false,
+        false,
+        false
+      ]
+    },
+    "MFI": {
+      "info": {
+        "name": "MFI",
+        "group": "Momentum Indicators",
+        "display_name": "Money Flow Index",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low",
+            "close",
+            "volume"
+          ]
+        },
+        "parameters": {
+          "timeperiod": 14
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "MINUS_DI": {
+      "info": {
+        "name": "MINUS_DI",
+        "group": "Momentum Indicators",
+        "display_name": "Minus Directional Indicator",
+        "function_flags": [
+          "Function has a streaming API",
+          "Function has an unstable period"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {
+          "timeperiod": 14
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "MINUS_DM": {
+      "info": {
+        "name": "MINUS_DM",
+        "group": "Momentum Indicators",
+        "display_name": "Minus Directional Movement",
+        "function_flags": [
+          "Function has a streaming API",
+          "Function has an unstable period"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low"
+          ]
+        },
+        "parameters": {
+          "timeperiod": 14
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "MOM": {
+      "info": {
+        "name": "MOM",
+        "group": "Momentum Indicators",
+        "display_name": "Momentum",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 10
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "PLUS_DI": {
+      "info": {
+        "name": "PLUS_DI",
+        "group": "Momentum Indicators",
+        "display_name": "Plus Directional Indicator",
+        "function_flags": [
+          "Function has a streaming API",
+          "Function has an unstable period"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {
+          "timeperiod": 14
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "PLUS_DM": {
+      "info": {
+        "name": "PLUS_DM",
+        "group": "Momentum Indicators",
+        "display_name": "Plus Directional Movement",
+        "function_flags": [
+          "Function has a streaming API",
+          "Function has an unstable period"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low"
+          ]
+        },
+        "parameters": {
+          "timeperiod": 14
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "PPO": {
+      "info": {
+        "name": "PPO",
+        "group": "Momentum Indicators",
+        "display_name": "Percentage Price Oscillator",
+        "function_flags": [
+          "Input must be positive",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "fastperiod": 12,
+          "slowperiod": 26,
+          "matype": 1
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "PSO": {
+      "info": {
+        "name": "PSO",
+        "group": "Momentum Indicators",
+        "display_name": "Premier Stochastic Oscillator",
+        "function_flags": [
+          "Uses a transcendental math function",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {
+          "fastk_period": 8,
+          "emaperiod": 5
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "QSTICK": {
+      "info": {
+        "name": "QSTICK",
+        "group": "Momentum Indicators",
+        "display_name": "Qstick",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "close"
+          ]
+        },
+        "parameters": {
+          "timeperiod": 10
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "ROC": {
+      "info": {
+        "name": "ROC",
+        "group": "Momentum Indicators",
+        "display_name": "Rate of change : ((price/prevPrice)-1)*100",
+        "function_flags": [
+          "Input must be positive",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 10
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "ROCP": {
+      "info": {
+        "name": "ROCP",
+        "group": "Momentum Indicators",
+        "display_name": "Rate of change Percentage: (price-prevPrice)/prevPrice",
+        "function_flags": [
+          "Input must be positive",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 10
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "ROCR": {
+      "info": {
+        "name": "ROCR",
+        "group": "Momentum Indicators",
+        "display_name": "Rate of change ratio: (price/prevPrice)",
+        "function_flags": [
+          "Input must be positive",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 10
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "ROCR100": {
+      "info": {
+        "name": "ROCR100",
+        "group": "Momentum Indicators",
+        "display_name": "Rate of change ratio 100 scale: (price/prevPrice)*100",
+        "function_flags": [
+          "Input must be positive",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 10
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "RSI": {
+      "info": {
+        "name": "RSI",
+        "group": "Momentum Indicators",
+        "display_name": "Relative Strength Index",
+        "function_flags": [
+          "Function has a streaming API",
+          "Function has an unstable period"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 14
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "SI": {
+      "info": {
+        "name": "SI",
+        "group": "Momentum Indicators",
+        "display_name": "Wilder Swing Index",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {
+          "limitmove": 3.0
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "SMI": {
+      "info": {
+        "name": "SMI",
+        "group": "Momentum Indicators",
+        "display_name": "Stochastic Momentum Index",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {
+          "timeperiod": 13,
+          "fastperiod": 2,
+          "slowperiod": 25,
+          "signalperiod": 9
+        },
+        "output_flags": {
+          "smi": [
+            "Line"
+          ],
+          "smisignal": [
+            "Dashed Line"
+          ]
+        },
+        "output_names": [
+          "smi",
+          "smisignal"
+        ]
+      },
+      "integer_outputs": [
+        false,
+        false
+      ]
+    },
+    "SQZMOM": {
+      "info": {
+        "name": "SQZMOM",
+        "group": "Momentum Indicators",
+        "display_name": "Squeeze Momentum and Level",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {
+          "bbperiod": 20,
+          "nbdev": 2.0,
+          "kcperiod": 20,
+          "factorwide": 2.0,
+          "factornormal": 1.5,
+          "factornarrow": 1.0
+        },
+        "output_flags": {
+          "momentum": [
+            "Histogram"
+          ],
+          "squeeze": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "momentum",
+          "squeeze"
+        ]
+      },
+      "integer_outputs": [
+        false,
+        true
+      ]
+    },
+    "STC": {
+      "info": {
+        "name": "STC",
+        "group": "Momentum Indicators",
+        "display_name": "Schaff Trend Cycle",
+        "function_flags": [
+          "Function has a streaming API",
+          "Function has an unstable period"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "fastperiod": 23,
+          "slowperiod": 50,
+          "cycleperiod": 10
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "STOCH": {
+      "info": {
+        "name": "STOCH",
+        "group": "Momentum Indicators",
+        "display_name": "Stochastic",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {
+          "fastk_period": 5,
+          "slowk_period": 3,
+          "slowk_matype": 0,
+          "slowd_period": 3,
+          "slowd_matype": 0
+        },
+        "output_flags": {
+          "slowk": [
+            "Dashed Line"
+          ],
+          "slowd": [
+            "Dashed Line"
+          ]
+        },
+        "output_names": [
+          "slowk",
+          "slowd"
+        ]
+      },
+      "integer_outputs": [
+        false,
+        false
+      ]
+    },
+    "STOCHF": {
+      "info": {
+        "name": "STOCHF",
+        "group": "Momentum Indicators",
+        "display_name": "Stochastic Fast",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {
+          "fastk_period": 5,
+          "fastd_period": 3,
+          "fastd_matype": 0
+        },
+        "output_flags": {
+          "fastk": [
+            "Line"
+          ],
+          "fastd": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "fastk",
+          "fastd"
+        ]
+      },
+      "integer_outputs": [
+        false,
+        false
+      ]
+    },
+    "STOCHRSI": {
+      "info": {
+        "name": "STOCHRSI",
+        "group": "Momentum Indicators",
+        "display_name": "Stochastic Relative Strength Index",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 14,
+          "fastk_period": 5,
+          "fastd_period": 3,
+          "fastd_matype": 0
+        },
+        "output_flags": {
+          "fastk": [
+            "Line"
+          ],
+          "fastd": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "fastk",
+          "fastd"
+        ]
+      },
+      "integer_outputs": [
+        false,
+        false
+      ]
+    },
+    "TRIX": {
+      "info": {
+        "name": "TRIX",
+        "group": "Momentum Indicators",
+        "display_name": "1-day Rate-Of-Change (ROC) of a Triple Smooth EMA",
+        "function_flags": [
+          "Input must be positive",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 30
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "TSI": {
+      "info": {
+        "name": "TSI",
+        "group": "Momentum Indicators",
+        "display_name": "True Strength Index",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "firstperiod": 25,
+          "secondperiod": 13
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "ULTOSC": {
+      "info": {
+        "name": "ULTOSC",
+        "group": "Momentum Indicators",
+        "display_name": "Ultimate Oscillator",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {
+          "timeperiod1": 7,
+          "timeperiod2": 14,
+          "timeperiod3": 28
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "VHF": {
+      "info": {
+        "name": "VHF",
+        "group": "Momentum Indicators",
+        "display_name": "Vertical Horizontal Filter",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 28
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "VORTEX": {
+      "info": {
+        "name": "VORTEX",
+        "group": "Momentum Indicators",
+        "display_name": "Vortex Indicator",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {
+          "timeperiod": 14
+        },
+        "output_flags": {
+          "plusvi": [
+            "Line"
+          ],
+          "minusvi": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "plusvi",
+          "minusvi"
+        ]
+      },
+      "integer_outputs": [
+        false,
+        false
+      ]
+    },
+    "WAD": {
+      "info": {
+        "name": "WAD",
+        "group": "Momentum Indicators",
+        "display_name": "Williams' Accumulation/Distribution",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is path-dependent"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "WAVETREND": {
+      "info": {
+        "name": "WAVETREND",
+        "group": "Momentum Indicators",
+        "display_name": "WaveTrend Oscillator",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {
+          "channelperiod": 10,
+          "averageperiod": 21,
+          "signalperiod": 4
+        },
+        "output_flags": {
+          "wt1": [
+            "Line"
+          ],
+          "wt2": [
+            "Dashed Line"
+          ]
+        },
+        "output_names": [
+          "wt1",
+          "wt2"
+        ]
+      },
+      "integer_outputs": [
+        false,
+        false
+      ]
+    },
+    "WILLR": {
+      "info": {
+        "name": "WILLR",
+        "group": "Momentum Indicators",
+        "display_name": "Williams' %R",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {
+          "timeperiod": 14
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "ACCBANDS": {
+      "info": {
+        "name": "ACCBANDS",
+        "group": "Overlap Studies",
+        "display_name": "Acceleration Bands",
+        "function_flags": [
+          "Output scale same as input",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {
+          "timeperiod": 20
+        },
+        "output_flags": {
+          "upperband": [
+            "Values represent an upper limit"
+          ],
+          "middleband": [
+            "Line"
+          ],
+          "lowerband": [
+            "Values represent a lower limit"
+          ]
+        },
+        "output_names": [
+          "upperband",
+          "middleband",
+          "lowerband"
+        ]
+      },
+      "integer_outputs": [
+        false,
+        false,
+        false
+      ]
+    },
+    "ALMA": {
+      "info": {
+        "name": "ALMA",
+        "group": "Overlap Studies",
+        "display_name": "Arnaud Legoux Moving Average",
+        "function_flags": [
+          "A period of 1 performs no smoothing",
+          "Uses a transcendental math function",
+          "Output scale same as input",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 9,
+          "sigma": 6.0,
+          "offset": 0.85
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "BBANDS": {
+      "info": {
+        "name": "BBANDS",
+        "group": "Overlap Studies",
+        "display_name": "Bollinger Bands",
+        "function_flags": [
+          "Output scale same as input",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 20,
+          "nbdevup": 2.0,
+          "nbdevdn": 2.0,
+          "matype": 0
+        },
+        "output_flags": {
+          "upperband": [
+            "Values represent an upper limit"
+          ],
+          "middleband": [
+            "Line"
+          ],
+          "lowerband": [
+            "Values represent a lower limit"
+          ]
+        },
+        "output_names": [
+          "upperband",
+          "middleband",
+          "lowerband"
+        ]
+      },
+      "integer_outputs": [
+        false,
+        false,
+        false
+      ]
+    },
+    "CKSP": {
+      "info": {
+        "name": "CKSP",
+        "group": "Overlap Studies",
+        "display_name": "Chande Kroll Stop",
+        "function_flags": [
+          "Output scale same as input",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {
+          "timeperiod": 10,
+          "multiplier": 1.0,
+          "stopperiod": 9
+        },
+        "output_flags": {
+          "highstop": [
+            "Line"
+          ],
+          "lowstop": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "highstop",
+          "lowstop"
+        ]
+      },
+      "integer_outputs": [
+        false,
+        false
+      ]
+    },
+    "DEMA": {
+      "info": {
+        "name": "DEMA",
+        "group": "Overlap Studies",
+        "display_name": "Double Exponential Moving Average",
+        "function_flags": [
+          "A period of 1 performs no smoothing",
+          "Output scale same as input",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 30
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "DONCHIAN": {
+      "info": {
+        "name": "DONCHIAN",
+        "group": "Overlap Studies",
+        "display_name": "Donchian Channels",
+        "function_flags": [
+          "Output scale same as input",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low"
+          ]
+        },
+        "parameters": {
+          "timeperiod": 20
+        },
+        "output_flags": {
+          "upperband": [
+            "Values represent an upper limit"
+          ],
+          "middleband": [
+            "Line"
+          ],
+          "lowerband": [
+            "Values represent a lower limit"
+          ]
+        },
+        "output_names": [
+          "upperband",
+          "middleband",
+          "lowerband"
+        ]
+      },
+      "integer_outputs": [
+        false,
+        false,
+        false
+      ]
+    },
+    "EMA": {
+      "info": {
+        "name": "EMA",
+        "group": "Overlap Studies",
+        "display_name": "Exponential Moving Average",
+        "function_flags": [
+          "A period of 1 performs no smoothing",
+          "Output scale same as input",
+          "Function has a streaming API",
+          "Function has an unstable period"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 30
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "FRAMA": {
+      "info": {
+        "name": "FRAMA",
+        "group": "Overlap Studies",
+        "display_name": "Fractal Adaptive Moving Average",
+        "function_flags": [
+          "Uses a transcendental math function",
+          "Output scale same as input",
+          "Function has a streaming API",
+          "Function has an unstable period"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low"
+          ]
+        },
+        "parameters": {
+          "timeperiod": 16
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "HMA": {
+      "info": {
+        "name": "HMA",
+        "group": "Overlap Studies",
+        "display_name": "Hull Moving Average",
+        "function_flags": [
+          "A period of 1 performs no smoothing",
+          "Output scale same as input",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 20
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "HT_TRENDLINE": {
+      "info": {
+        "name": "HT_TRENDLINE",
+        "group": "Overlap Studies",
+        "display_name": "Hilbert Transform - Instantaneous Trendline",
+        "function_flags": [
+          "Uses a transcendental math function",
+          "Output scale same as input",
+          "Function has a streaming API",
+          "Function has an unstable period"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {},
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "ICHIMOKU": {
+      "info": {
+        "name": "ICHIMOKU",
+        "group": "Overlap Studies",
+        "display_name": "Ichimoku Kinko Hyo",
+        "function_flags": [
+          "An output is display-shifted",
+          "Output scale same as input",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low"
+          ]
+        },
+        "parameters": {
+          "tenkanperiod": 9,
+          "kijunperiod": 26,
+          "senkoubperiod": 52
+        },
+        "output_flags": {
+          "tenkansen": [
+            "Line"
+          ],
+          "kijunsen": [
+            "Line"
+          ],
+          "senkouspana": [
+            "Line",
+            "Output is display-shifted"
+          ],
+          "senkouspanb": [
+            "Line",
+            "Output is display-shifted"
+          ]
+        },
+        "output_names": [
+          "tenkansen",
+          "kijunsen",
+          "senkouspana",
+          "senkouspanb"
+        ]
+      },
+      "integer_outputs": [
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    "KAMA": {
+      "info": {
+        "name": "KAMA",
+        "group": "Overlap Studies",
+        "display_name": "Kaufman Adaptive Moving Average",
+        "function_flags": [
+          "A period of 1 performs no smoothing",
+          "Output scale same as input",
+          "Function has a streaming API",
+          "Function has an unstable period"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 30
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "KC": {
+      "info": {
+        "name": "KC",
+        "group": "Overlap Studies",
+        "display_name": "Keltner Channels",
+        "function_flags": [
+          "Output scale same as input",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {
+          "timeperiod": 20,
+          "atrperiod": 10,
+          "nbdev": 2.0
+        },
+        "output_flags": {
+          "upperband": [
+            "Values represent an upper limit"
+          ],
+          "middleband": [
+            "Line"
+          ],
+          "lowerband": [
+            "Values represent a lower limit"
+          ]
+        },
+        "output_names": [
+          "upperband",
+          "middleband",
+          "lowerband"
+        ]
+      },
+      "integer_outputs": [
+        false,
+        false,
+        false
+      ]
+    },
+    "MA": {
+      "info": {
+        "name": "MA",
+        "group": "Overlap Studies",
+        "display_name": "Moving average",
+        "function_flags": [
+          "A period of 1 performs no smoothing",
+          "Output scale same as input",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 30,
+          "matype": 0
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "MAMA": {
+      "info": {
+        "name": "MAMA",
+        "group": "Overlap Studies",
+        "display_name": "MESA Adaptive Moving Average",
+        "function_flags": [
+          "Uses a transcendental math function",
+          "Output scale same as input",
+          "Function has a streaming API",
+          "Function has an unstable period"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "fastlimit": 0.5,
+          "slowlimit": 0.05
+        },
+        "output_flags": {
+          "mama": [
+            "Line"
+          ],
+          "fama": [
+            "Dashed Line"
+          ]
+        },
+        "output_names": [
+          "mama",
+          "fama"
+        ]
+      },
+      "integer_outputs": [
+        false,
+        false
+      ]
+    },
+    "MAVP": {
+      "info": {
+        "name": "MAVP",
+        "group": "Overlap Studies",
+        "display_name": "Moving average with variable period",
+        "function_flags": [
+          "Output scale same as input",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close",
+          "periods": "periods"
+        },
+        "parameters": {
+          "minperiod": 2,
+          "maxperiod": 30,
+          "matype": 0
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "MCGD": {
+      "info": {
+        "name": "MCGD",
+        "group": "Overlap Studies",
+        "display_name": "McGinley Dynamic",
+        "function_flags": [
+          "Input must be positive",
+          "Output scale same as input",
+          "Function has a streaming API",
+          "Function has an unstable period"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 14
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "MIDPOINT": {
+      "info": {
+        "name": "MIDPOINT",
+        "group": "Overlap Studies",
+        "display_name": "MidPoint over period",
+        "function_flags": [
+          "Output scale same as input",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 14
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "MIDPRICE": {
+      "info": {
+        "name": "MIDPRICE",
+        "group": "Overlap Studies",
+        "display_name": "Midpoint Price over period",
+        "function_flags": [
+          "Output scale same as input",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low"
+          ]
+        },
+        "parameters": {
+          "timeperiod": 14
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "RMA": {
+      "info": {
+        "name": "RMA",
+        "group": "Overlap Studies",
+        "display_name": "Wilder's Smoothed Moving Average",
+        "function_flags": [
+          "A period of 1 performs no smoothing",
+          "Output scale same as input",
+          "Function has a streaming API",
+          "Function has an unstable period"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 30
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "SAR": {
+      "info": {
+        "name": "SAR",
+        "group": "Overlap Studies",
+        "display_name": "Parabolic SAR",
+        "function_flags": [
+          "Output scale same as input",
+          "Function has a streaming API",
+          "Output is path-dependent"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low"
+          ]
+        },
+        "parameters": {
+          "acceleration": 0.02,
+          "maximum": 0.2
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "SAREXT": {
+      "info": {
+        "name": "SAREXT",
+        "group": "Overlap Studies",
+        "display_name": "Parabolic SAR - Extended",
+        "function_flags": [
+          "Output scale same as input",
+          "Function has a streaming API",
+          "Output is path-dependent"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low"
+          ]
+        },
+        "parameters": {
+          "startvalue": 0.0,
+          "offsetonreverse": 0.0,
+          "accelerationinitlong": 0.02,
+          "accelerationlong": 0.02,
+          "accelerationmaxlong": 0.2,
+          "accelerationinitshort": 0.02,
+          "accelerationshort": 0.02,
+          "accelerationmaxshort": 0.2
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "SMA": {
+      "info": {
+        "name": "SMA",
+        "group": "Overlap Studies",
+        "display_name": "Simple Moving Average",
+        "function_flags": [
+          "A period of 1 performs no smoothing",
+          "Output scale same as input",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 30
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "SUPERTREND": {
+      "info": {
+        "name": "SUPERTREND",
+        "group": "Overlap Studies",
+        "display_name": "SuperTrend",
+        "function_flags": [
+          "Output scale same as input",
+          "Function has a streaming API",
+          "Output is path-dependent"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {
+          "timeperiod": 10,
+          "multiplier": 3.0
+        },
+        "output_flags": {
+          "supertrend": [
+            "Line"
+          ],
+          "trend": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "supertrend",
+          "trend"
+        ]
+      },
+      "integer_outputs": [
+        false,
+        true
+      ]
+    },
+    "SWAK_BUTTER": {
+      "info": {
+        "name": "SWAK_BUTTER",
+        "group": "Overlap Studies",
+        "display_name": "Swiss Army Knife - Butterworth Filter",
+        "function_flags": [
+          "Uses a transcendental math function",
+          "Output scale same as input",
+          "Function has a streaming API",
+          "Function has an unstable period"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 20
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "SWAK_GAUSS": {
+      "info": {
+        "name": "SWAK_GAUSS",
+        "group": "Overlap Studies",
+        "display_name": "Swiss Army Knife - Gaussian Filter",
+        "function_flags": [
+          "Uses a transcendental math function",
+          "Output scale same as input",
+          "Function has a streaming API",
+          "Function has an unstable period"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 20
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "T3": {
+      "info": {
+        "name": "T3",
+        "group": "Overlap Studies",
+        "display_name": "Triple Exponential Moving Average (T3)",
+        "function_flags": [
+          "A period of 1 performs no smoothing",
+          "Output scale same as input",
+          "Function has a streaming API",
+          "Function has an unstable period"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 5,
+          "vfactor": 0.7
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "TEMA": {
+      "info": {
+        "name": "TEMA",
+        "group": "Overlap Studies",
+        "display_name": "Triple Exponential Moving Average",
+        "function_flags": [
+          "A period of 1 performs no smoothing",
+          "Output scale same as input",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 30
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "TRIMA": {
+      "info": {
+        "name": "TRIMA",
+        "group": "Overlap Studies",
+        "display_name": "Triangular Moving Average",
+        "function_flags": [
+          "A period of 1 performs no smoothing",
+          "Output scale same as input",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 30
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "VIDYA": {
+      "info": {
+        "name": "VIDYA",
+        "group": "Overlap Studies",
+        "display_name": "Variable Index Dynamic Average",
+        "function_flags": [
+          "A period of 1 performs no smoothing",
+          "Output scale same as input",
+          "Function has a streaming API",
+          "Function has an unstable period"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 12,
+          "cmoperiod": 9
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "VWMA": {
+      "info": {
+        "name": "VWMA",
+        "group": "Overlap Studies",
+        "display_name": "Volume Weighted Moving Average",
+        "function_flags": [
+          "A period of 1 performs no smoothing",
+          "Output scale same as input",
+          "Function has a streaming API",
+          "Output can be NaN or infinite"
+        ],
+        "input_names": {
+          "price": "close",
+          "prices": [
+            "volume"
+          ]
+        },
+        "parameters": {
+          "timeperiod": 30
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "WMA": {
+      "info": {
+        "name": "WMA",
+        "group": "Overlap Studies",
+        "display_name": "Weighted Moving Average",
+        "function_flags": [
+          "A period of 1 performs no smoothing",
+          "Output scale same as input",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 30
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "ZIGZAG": {
+      "info": {
+        "name": "ZIGZAG",
+        "group": "Overlap Studies",
+        "display_name": "Zig Zag",
+        "function_flags": [
+          "Input must be positive",
+          "Output scale same as input",
+          "Function has a streaming API",
+          "Output is path-dependent"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low"
+          ]
+        },
+        "parameters": {
+          "sensitivity": 5.0,
+          "mintrendlength": 1
+        },
+        "output_flags": {
+          "zigzag": [
+            "Line"
+          ],
+          "trend": [
+            "Line"
+          ],
+          "pivotidx": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "zigzag",
+          "trend",
+          "pivotidx"
+        ]
+      },
+      "integer_outputs": [
+        false,
+        true,
+        true
+      ]
+    },
+    "ZLEMA": {
+      "info": {
+        "name": "ZLEMA",
+        "group": "Overlap Studies",
+        "display_name": "Zero-Lag Exponential Moving Average",
+        "function_flags": [
+          "A period of 1 performs no smoothing",
+          "Output scale same as input",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 30
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "CDL2CROWS": {
+      "info": {
+        "name": "CDL2CROWS",
+        "group": "Pattern Recognition",
+        "display_name": "Two Crows",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be negative",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDL3BLACKCROWS": {
+      "info": {
+        "name": "CDL3BLACKCROWS",
+        "group": "Pattern Recognition",
+        "display_name": "Three Black Crows",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be negative",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDL3INSIDE": {
+      "info": {
+        "name": "CDL3INSIDE",
+        "group": "Pattern Recognition",
+        "display_name": "Three Inside Up/Down",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be positive",
+            "Output can be negative",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDL3LINESTRIKE": {
+      "info": {
+        "name": "CDL3LINESTRIKE",
+        "group": "Pattern Recognition",
+        "display_name": "Three-Line Strike",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be positive",
+            "Output can be negative",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDL3OUTSIDE": {
+      "info": {
+        "name": "CDL3OUTSIDE",
+        "group": "Pattern Recognition",
+        "display_name": "Three Outside Up/Down",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be positive",
+            "Output can be negative",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDL3STARSINSOUTH": {
+      "info": {
+        "name": "CDL3STARSINSOUTH",
+        "group": "Pattern Recognition",
+        "display_name": "Three Stars In The South",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be positive",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDL3WHITESOLDIERS": {
+      "info": {
+        "name": "CDL3WHITESOLDIERS",
+        "group": "Pattern Recognition",
+        "display_name": "Three Advancing White Soldiers",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be positive",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLABANDONEDBABY": {
+      "info": {
+        "name": "CDLABANDONEDBABY",
+        "group": "Pattern Recognition",
+        "display_name": "Abandoned Baby",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {
+          "penetration": 0.3
+        },
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be positive",
+            "Output can be negative",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLADVANCEBLOCK": {
+      "info": {
+        "name": "CDLADVANCEBLOCK",
+        "group": "Pattern Recognition",
+        "display_name": "Advance Block",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be negative",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLBELTHOLD": {
+      "info": {
+        "name": "CDLBELTHOLD",
+        "group": "Pattern Recognition",
+        "display_name": "Belt-hold",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be positive",
+            "Output can be negative",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLBREAKAWAY": {
+      "info": {
+        "name": "CDLBREAKAWAY",
+        "group": "Pattern Recognition",
+        "display_name": "Breakaway",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be positive",
+            "Output can be negative",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLCLOSINGMARUBOZU": {
+      "info": {
+        "name": "CDLCLOSINGMARUBOZU",
+        "group": "Pattern Recognition",
+        "display_name": "Closing Marubozu",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be positive",
+            "Output can be negative",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLCONCEALBABYSWALL": {
+      "info": {
+        "name": "CDLCONCEALBABYSWALL",
+        "group": "Pattern Recognition",
+        "display_name": "Concealing Baby Swallow",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be positive",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLCOUNTERATTACK": {
+      "info": {
+        "name": "CDLCOUNTERATTACK",
+        "group": "Pattern Recognition",
+        "display_name": "Counterattack",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be positive",
+            "Output can be negative",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLDARKCLOUDCOVER": {
+      "info": {
+        "name": "CDLDARKCLOUDCOVER",
+        "group": "Pattern Recognition",
+        "display_name": "Dark Cloud Cover",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {
+          "penetration": 0.5
+        },
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be negative",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLDOJI": {
+      "info": {
+        "name": "CDLDOJI",
+        "group": "Pattern Recognition",
+        "display_name": "Doji",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Pattern (Bool)",
+            "Output can be positive",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLDOJISTAR": {
+      "info": {
+        "name": "CDLDOJISTAR",
+        "group": "Pattern Recognition",
+        "display_name": "Doji Star",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be positive",
+            "Output can be negative",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLDRAGONFLYDOJI": {
+      "info": {
+        "name": "CDLDRAGONFLYDOJI",
+        "group": "Pattern Recognition",
+        "display_name": "Dragonfly Doji",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Pattern (Bool)",
+            "Output can be positive",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLENGULFING": {
+      "info": {
+        "name": "CDLENGULFING",
+        "group": "Pattern Recognition",
+        "display_name": "Engulfing Pattern",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be positive",
+            "Output can be negative",
+            "Output can be zero",
+            "Weak Pattern (+/-80 = a weaker form of the pattern)"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLEVENINGDOJISTAR": {
+      "info": {
+        "name": "CDLEVENINGDOJISTAR",
+        "group": "Pattern Recognition",
+        "display_name": "Evening Doji Star",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {
+          "penetration": 0.3
+        },
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be negative",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLEVENINGSTAR": {
+      "info": {
+        "name": "CDLEVENINGSTAR",
+        "group": "Pattern Recognition",
+        "display_name": "Evening Star",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {
+          "penetration": 0.3
+        },
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be negative",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLGAPSIDESIDEWHITE": {
+      "info": {
+        "name": "CDLGAPSIDESIDEWHITE",
+        "group": "Pattern Recognition",
+        "display_name": "Up/Down-gap side-by-side white lines",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be positive",
+            "Output can be negative",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLGRAVESTONEDOJI": {
+      "info": {
+        "name": "CDLGRAVESTONEDOJI",
+        "group": "Pattern Recognition",
+        "display_name": "Gravestone Doji",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Pattern (Bool)",
+            "Output can be positive",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLHAMMER": {
+      "info": {
+        "name": "CDLHAMMER",
+        "group": "Pattern Recognition",
+        "display_name": "Hammer",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be positive",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLHANGINGMAN": {
+      "info": {
+        "name": "CDLHANGINGMAN",
+        "group": "Pattern Recognition",
+        "display_name": "Hanging Man",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be negative",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLHARAMI": {
+      "info": {
+        "name": "CDLHARAMI",
+        "group": "Pattern Recognition",
+        "display_name": "Harami Pattern",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be positive",
+            "Output can be negative",
+            "Output can be zero",
+            "Weak Pattern (+/-80 = a weaker form of the pattern)"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLHARAMICROSS": {
+      "info": {
+        "name": "CDLHARAMICROSS",
+        "group": "Pattern Recognition",
+        "display_name": "Harami Cross Pattern",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be positive",
+            "Output can be negative",
+            "Output can be zero",
+            "Weak Pattern (+/-80 = a weaker form of the pattern)"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLHIGHWAVE": {
+      "info": {
+        "name": "CDLHIGHWAVE",
+        "group": "Pattern Recognition",
+        "display_name": "High-Wave Candle",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Output can be positive",
+            "Output can be negative",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLHIKKAKE": {
+      "info": {
+        "name": "CDLHIKKAKE",
+        "group": "Pattern Recognition",
+        "display_name": "Hikkake Pattern",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Confirmation Pattern (+/-200 = this bar confirms an earlier pattern)",
+            "Output can be positive",
+            "Output can be negative",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLHIKKAKEMOD": {
+      "info": {
+        "name": "CDLHIKKAKEMOD",
+        "group": "Pattern Recognition",
+        "display_name": "Modified Hikkake Pattern",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Confirmation Pattern (+/-200 = this bar confirms an earlier pattern)",
+            "Output can be positive",
+            "Output can be negative",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLHOMINGPIGEON": {
+      "info": {
+        "name": "CDLHOMINGPIGEON",
+        "group": "Pattern Recognition",
+        "display_name": "Homing Pigeon",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be positive",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLIDENTICAL3CROWS": {
+      "info": {
+        "name": "CDLIDENTICAL3CROWS",
+        "group": "Pattern Recognition",
+        "display_name": "Identical Three Crows",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be negative",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLINNECK": {
+      "info": {
+        "name": "CDLINNECK",
+        "group": "Pattern Recognition",
+        "display_name": "In-Neck Pattern",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be negative",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLINVERTEDHAMMER": {
+      "info": {
+        "name": "CDLINVERTEDHAMMER",
+        "group": "Pattern Recognition",
+        "display_name": "Inverted Hammer",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be positive",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLKICKING": {
+      "info": {
+        "name": "CDLKICKING",
+        "group": "Pattern Recognition",
+        "display_name": "Kicking",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be positive",
+            "Output can be negative",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLKICKINGBYLENGTH": {
+      "info": {
+        "name": "CDLKICKINGBYLENGTH",
+        "group": "Pattern Recognition",
+        "display_name": "Kicking - bull/bear determined by the longer marubozu",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be positive",
+            "Output can be negative",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLLADDERBOTTOM": {
+      "info": {
+        "name": "CDLLADDERBOTTOM",
+        "group": "Pattern Recognition",
+        "display_name": "Ladder Bottom",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be positive",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLLONGLEGGEDDOJI": {
+      "info": {
+        "name": "CDLLONGLEGGEDDOJI",
+        "group": "Pattern Recognition",
+        "display_name": "Long Legged Doji",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Pattern (Bool)",
+            "Output can be positive",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLLONGLINE": {
+      "info": {
+        "name": "CDLLONGLINE",
+        "group": "Pattern Recognition",
+        "display_name": "Long Line Candle",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be positive",
+            "Output can be negative",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLMARUBOZU": {
+      "info": {
+        "name": "CDLMARUBOZU",
+        "group": "Pattern Recognition",
+        "display_name": "Marubozu",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be positive",
+            "Output can be negative",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLMATCHINGLOW": {
+      "info": {
+        "name": "CDLMATCHINGLOW",
+        "group": "Pattern Recognition",
+        "display_name": "Matching Low",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be positive",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLMATHOLD": {
+      "info": {
+        "name": "CDLMATHOLD",
+        "group": "Pattern Recognition",
+        "display_name": "Mat Hold",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {
+          "penetration": 0.5
+        },
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be positive",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLMORNINGDOJISTAR": {
+      "info": {
+        "name": "CDLMORNINGDOJISTAR",
+        "group": "Pattern Recognition",
+        "display_name": "Morning Doji Star",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {
+          "penetration": 0.3
+        },
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be positive",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLMORNINGSTAR": {
+      "info": {
+        "name": "CDLMORNINGSTAR",
+        "group": "Pattern Recognition",
+        "display_name": "Morning Star",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {
+          "penetration": 0.3
+        },
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be positive",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLONNECK": {
+      "info": {
+        "name": "CDLONNECK",
+        "group": "Pattern Recognition",
+        "display_name": "On-Neck Pattern",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be negative",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLPIERCING": {
+      "info": {
+        "name": "CDLPIERCING",
+        "group": "Pattern Recognition",
+        "display_name": "Piercing Pattern",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be positive",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLRICKSHAWMAN": {
+      "info": {
+        "name": "CDLRICKSHAWMAN",
+        "group": "Pattern Recognition",
+        "display_name": "Rickshaw Man",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Pattern (Bool)",
+            "Output can be positive",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLRISEFALL3METHODS": {
+      "info": {
+        "name": "CDLRISEFALL3METHODS",
+        "group": "Pattern Recognition",
+        "display_name": "Rising/Falling Three Methods",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be positive",
+            "Output can be negative",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLSEPARATINGLINES": {
+      "info": {
+        "name": "CDLSEPARATINGLINES",
+        "group": "Pattern Recognition",
+        "display_name": "Separating Lines",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be positive",
+            "Output can be negative",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLSHOOTINGSTAR": {
+      "info": {
+        "name": "CDLSHOOTINGSTAR",
+        "group": "Pattern Recognition",
+        "display_name": "Shooting Star",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be negative",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLSHORTLINE": {
+      "info": {
+        "name": "CDLSHORTLINE",
+        "group": "Pattern Recognition",
+        "display_name": "Short Line Candle",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Output can be positive",
+            "Output can be negative",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLSPINNINGTOP": {
+      "info": {
+        "name": "CDLSPINNINGTOP",
+        "group": "Pattern Recognition",
+        "display_name": "Spinning Top",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Output can be positive",
+            "Output can be negative",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLSTALLEDPATTERN": {
+      "info": {
+        "name": "CDLSTALLEDPATTERN",
+        "group": "Pattern Recognition",
+        "display_name": "Stalled Pattern",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be negative",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLSTICKSANDWICH": {
+      "info": {
+        "name": "CDLSTICKSANDWICH",
+        "group": "Pattern Recognition",
+        "display_name": "Stick Sandwich",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be positive",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLTAKURI": {
+      "info": {
+        "name": "CDLTAKURI",
+        "group": "Pattern Recognition",
+        "display_name": "Takuri (Dragonfly Doji with very long lower shadow)",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Pattern (Bool)",
+            "Output can be positive",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLTASUKIGAP": {
+      "info": {
+        "name": "CDLTASUKIGAP",
+        "group": "Pattern Recognition",
+        "display_name": "Tasuki Gap",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be positive",
+            "Output can be negative",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLTHRUSTING": {
+      "info": {
+        "name": "CDLTHRUSTING",
+        "group": "Pattern Recognition",
+        "display_name": "Thrusting Pattern",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be negative",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLTRISTAR": {
+      "info": {
+        "name": "CDLTRISTAR",
+        "group": "Pattern Recognition",
+        "display_name": "Tristar Pattern",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be positive",
+            "Output can be negative",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLUNIQUE3RIVER": {
+      "info": {
+        "name": "CDLUNIQUE3RIVER",
+        "group": "Pattern Recognition",
+        "display_name": "Unique 3 River",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be positive",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLUPSIDEGAP2CROWS": {
+      "info": {
+        "name": "CDLUPSIDEGAP2CROWS",
+        "group": "Pattern Recognition",
+        "display_name": "Upside Gap Two Crows",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be negative",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "CDLXSIDEGAP3METHODS": {
+      "info": {
+        "name": "CDLXSIDEGAP3METHODS",
+        "group": "Pattern Recognition",
+        "display_name": "Upside/Downside Gap Three Methods",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is a candlestick"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "integer": [
+            "Line",
+            "Bull/Bear Pattern (Bearish < 0, Neutral = 0, Bullish > 0)",
+            "Output can be positive",
+            "Output can be negative",
+            "Output can be zero"
+          ]
+        },
+        "output_names": [
+          "integer"
+        ]
+      },
+      "integer_outputs": [
+        true
+      ]
+    },
+    "AVGDEV": {
+      "info": {
+        "name": "AVGDEV",
+        "group": "Price Transform",
+        "display_name": "Average Deviation",
+        "function_flags": [
+          "Output scale same as input",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 14
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "AVGPRICE": {
+      "info": {
+        "name": "AVGPRICE",
+        "group": "Price Transform",
+        "display_name": "Average Price",
+        "function_flags": [
+          "Output scale same as input",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "HA": {
+      "info": {
+        "name": "HA",
+        "group": "Price Transform",
+        "display_name": "Heikin-Ashi Candles",
+        "function_flags": [
+          "Output scale same as input",
+          "Function has a streaming API",
+          "Function has an unstable period"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "haopen": [
+            "Line"
+          ],
+          "hahigh": [
+            "Line",
+            "Values represent an upper limit"
+          ],
+          "halow": [
+            "Line",
+            "Values represent a lower limit"
+          ],
+          "haclose": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "haopen",
+          "hahigh",
+          "halow",
+          "haclose"
+        ]
+      },
+      "integer_outputs": [
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    "MEDPRICE": {
+      "info": {
+        "name": "MEDPRICE",
+        "group": "Price Transform",
+        "display_name": "Median Price",
+        "function_flags": [
+          "Output scale same as input",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "TYPPRICE": {
+      "info": {
+        "name": "TYPPRICE",
+        "group": "Price Transform",
+        "display_name": "Typical Price",
+        "function_flags": [
+          "Output scale same as input",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "WCLPRICE": {
+      "info": {
+        "name": "WCLPRICE",
+        "group": "Price Transform",
+        "display_name": "Weighted Close Price",
+        "function_flags": [
+          "Output scale same as input",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "BETA": {
+      "info": {
+        "name": "BETA",
+        "group": "Statistic Functions",
+        "display_name": "Beta",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price0": "high",
+          "price1": "low"
+        },
+        "parameters": {
+          "timeperiod": 5
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "CORREL": {
+      "info": {
+        "name": "CORREL",
+        "group": "Statistic Functions",
+        "display_name": "Pearson's Correlation Coefficient (r)",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price0": "high",
+          "price1": "low"
+        },
+        "parameters": {
+          "timeperiod": 30
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "KURTOSIS": {
+      "info": {
+        "name": "KURTOSIS",
+        "group": "Statistic Functions",
+        "display_name": "Rolling Excess Kurtosis",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output can be NaN or infinite"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 30
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "LINEARREG": {
+      "info": {
+        "name": "LINEARREG",
+        "group": "Statistic Functions",
+        "display_name": "Linear Regression",
+        "function_flags": [
+          "Output scale same as input",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 14
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "LINEARREG_ANGLE": {
+      "info": {
+        "name": "LINEARREG_ANGLE",
+        "group": "Statistic Functions",
+        "display_name": "Linear Regression Angle",
+        "function_flags": [
+          "Uses a transcendental math function",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 14
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "LINEARREG_INTERCEPT": {
+      "info": {
+        "name": "LINEARREG_INTERCEPT",
+        "group": "Statistic Functions",
+        "display_name": "Linear Regression Intercept",
+        "function_flags": [
+          "Output scale same as input",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 14
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "LINEARREG_SLOPE": {
+      "info": {
+        "name": "LINEARREG_SLOPE",
+        "group": "Statistic Functions",
+        "display_name": "Linear Regression Slope",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 14
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "MEDIAN": {
+      "info": {
+        "name": "MEDIAN",
+        "group": "Statistic Functions",
+        "display_name": "Rolling Median",
+        "function_flags": [
+          "Output scale same as input",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 30
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "PERCENTILE": {
+      "info": {
+        "name": "PERCENTILE",
+        "group": "Statistic Functions",
+        "display_name": "Percentile (nearest rank)",
+        "function_flags": [
+          "Output scale same as input",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 100,
+          "percentile": 50.0
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "PERCENTRANK": {
+      "info": {
+        "name": "PERCENTRANK",
+        "group": "Statistic Functions",
+        "display_name": "Percent Rank",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 100
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "STDDEV": {
+      "info": {
+        "name": "STDDEV",
+        "group": "Statistic Functions",
+        "display_name": "Standard Deviation",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 5,
+          "nbdev": 1.0
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "TSF": {
+      "info": {
+        "name": "TSF",
+        "group": "Statistic Functions",
+        "display_name": "Time Series Forecast",
+        "function_flags": [
+          "Output scale same as input",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 14
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "VAR": {
+      "info": {
+        "name": "VAR",
+        "group": "Statistic Functions",
+        "display_name": "Variance",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 5,
+          "nbdev": 1.0
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "ADR": {
+      "info": {
+        "name": "ADR",
+        "group": "Volatility Indicators",
+        "display_name": "Average Day Range",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low"
+          ]
+        },
+        "parameters": {
+          "timeperiod": 14
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "ATR": {
+      "info": {
+        "name": "ATR",
+        "group": "Volatility Indicators",
+        "display_name": "Average True Range",
+        "function_flags": [
+          "Function has a streaming API",
+          "Function has an unstable period"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {
+          "timeperiod": 14
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "BBW": {
+      "info": {
+        "name": "BBW",
+        "group": "Volatility Indicators",
+        "display_name": "Bollinger BandWidth",
+        "function_flags": [
+          "Input must be positive",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 20,
+          "nbdevup": 2.0,
+          "nbdevdn": 2.0,
+          "matype": 0
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "CVI": {
+      "info": {
+        "name": "CVI",
+        "group": "Volatility Indicators",
+        "display_name": "Chaikin's Volatility",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low"
+          ]
+        },
+        "parameters": {
+          "timeperiod": 10,
+          "rocperiod": 10
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "MASSI": {
+      "info": {
+        "name": "MASSI",
+        "group": "Volatility Indicators",
+        "display_name": "Mass Index",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low"
+          ]
+        },
+        "parameters": {
+          "fastperiod": 9,
+          "slowperiod": 25
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "NATR": {
+      "info": {
+        "name": "NATR",
+        "group": "Volatility Indicators",
+        "display_name": "Normalized Average True Range",
+        "function_flags": [
+          "Input must be positive",
+          "Function has a streaming API",
+          "Function has an unstable period"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {
+          "timeperiod": 14
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "PERCENTB": {
+      "info": {
+        "name": "PERCENTB",
+        "group": "Volatility Indicators",
+        "display_name": "Bollinger Bands %B",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 20,
+          "nbdevup": 2.0,
+          "nbdevdn": 2.0,
+          "matype": 0
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "ROGERSSATCHELL": {
+      "info": {
+        "name": "ROGERSSATCHELL",
+        "group": "Volatility Indicators",
+        "display_name": "Rogers-Satchell Volatility",
+        "function_flags": [
+          "Uses a transcendental math function",
+          "Input must be positive",
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "open",
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {
+          "timeperiod": 10,
+          "annualization": 252.0
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "RVI": {
+      "info": {
+        "name": "RVI",
+        "group": "Volatility Indicators",
+        "display_name": "Relative Volatility Index",
+        "function_flags": [
+          "Function has a streaming API",
+          "Function has an unstable period"
+        ],
+        "input_names": {
+          "price": "close"
+        },
+        "parameters": {
+          "timeperiod": 14,
+          "stddevperiod": 10
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "RVIR": {
+      "info": {
+        "name": "RVIR",
+        "group": "Volatility Indicators",
+        "display_name": "Relative Volatility Index, refined high/low form",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low"
+          ]
+        },
+        "parameters": {
+          "timeperiod": 14,
+          "stddevperiod": 10
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "TRANGE": {
+      "info": {
+        "name": "TRANGE",
+        "group": "Volatility Indicators",
+        "display_name": "True Range",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low",
+            "close"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "AD": {
+      "info": {
+        "name": "AD",
+        "group": "Volume Indicators",
+        "display_name": "Chaikin A/D Line",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is path-dependent"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low",
+            "close",
+            "volume"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "ADOSC": {
+      "info": {
+        "name": "ADOSC",
+        "group": "Volume Indicators",
+        "display_name": "Chaikin A/D Oscillator",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low",
+            "close",
+            "volume"
+          ]
+        },
+        "parameters": {
+          "fastperiod": 3,
+          "slowperiod": 10
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "CMF": {
+      "info": {
+        "name": "CMF",
+        "group": "Volume Indicators",
+        "display_name": "Chaikin Money Flow",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low",
+            "close",
+            "volume"
+          ]
+        },
+        "parameters": {
+          "timeperiod": 20
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "EFI": {
+      "info": {
+        "name": "EFI",
+        "group": "Volume Indicators",
+        "display_name": "Elder's Force Index",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "close",
+            "volume"
+          ]
+        },
+        "parameters": {
+          "timeperiod": 13
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "EMV": {
+      "info": {
+        "name": "EMV",
+        "group": "Volume Indicators",
+        "display_name": "Arms Ease of Movement",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low",
+            "volume"
+          ]
+        },
+        "parameters": {
+          "timeperiod": 14,
+          "volumedivisor": 10000.0
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "KVO": {
+      "info": {
+        "name": "KVO",
+        "group": "Volume Indicators",
+        "display_name": "Klinger Volume Oscillator",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low",
+            "close",
+            "volume"
+          ]
+        },
+        "parameters": {
+          "fastperiod": 34,
+          "slowperiod": 55,
+          "signalperiod": 13
+        },
+        "output_flags": {
+          "kvo": [
+            "Line"
+          ],
+          "kvosignal": [
+            "Dashed Line"
+          ]
+        },
+        "output_names": [
+          "kvo",
+          "kvosignal"
+        ]
+      },
+      "integer_outputs": [
+        false,
+        false
+      ]
+    },
+    "MARKETFI": {
+      "info": {
+        "name": "MARKETFI",
+        "group": "Volume Indicators",
+        "display_name": "Market Facilitation Index",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low",
+            "volume"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "NVI": {
+      "info": {
+        "name": "NVI",
+        "group": "Volume Indicators",
+        "display_name": "Negative Volume Index",
+        "function_flags": [
+          "Input must be positive",
+          "Function has a streaming API",
+          "Output is path-dependent"
+        ],
+        "input_names": {
+          "prices": [
+            "close",
+            "volume"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "OBV": {
+      "info": {
+        "name": "OBV",
+        "group": "Volume Indicators",
+        "display_name": "On Balance Volume",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output is path-dependent"
+        ],
+        "input_names": {
+          "price": "close",
+          "prices": [
+            "volume"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "PVI": {
+      "info": {
+        "name": "PVI",
+        "group": "Volume Indicators",
+        "display_name": "Positive Volume Index",
+        "function_flags": [
+          "Input must be positive",
+          "Function has a streaming API",
+          "Output is path-dependent"
+        ],
+        "input_names": {
+          "prices": [
+            "close",
+            "volume"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "PVO": {
+      "info": {
+        "name": "PVO",
+        "group": "Volume Indicators",
+        "display_name": "Percentage Volume Oscillator",
+        "function_flags": [
+          "Function has a streaming API"
+        ],
+        "input_names": {
+          "prices": [
+            "volume"
+          ]
+        },
+        "parameters": {
+          "fastperiod": 12,
+          "slowperiod": 26,
+          "matype": 1
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "PVT": {
+      "info": {
+        "name": "PVT",
+        "group": "Volume Indicators",
+        "display_name": "Price Volume Trend",
+        "function_flags": [
+          "Input must be positive",
+          "Function has a streaming API",
+          "Output is path-dependent"
+        ],
+        "input_names": {
+          "prices": [
+            "close",
+            "volume"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "RVOL": {
+      "info": {
+        "name": "RVOL",
+        "group": "Volume Indicators",
+        "display_name": "Relative Volume",
+        "function_flags": [
+          "Function has a streaming API",
+          "Output can be NaN or infinite"
+        ],
+        "input_names": {
+          "prices": [
+            "volume"
+          ]
+        },
+        "parameters": {
+          "timeperiod": 20
+        },
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    },
+    "VWAP": {
+      "info": {
+        "name": "VWAP",
+        "group": "Volume Indicators",
+        "display_name": "Volume Weighted Average Price",
+        "function_flags": [
+          "Output scale same as input",
+          "Function has a streaming API",
+          "Output is path-dependent"
+        ],
+        "input_names": {
+          "prices": [
+            "high",
+            "low",
+            "close",
+            "volume"
+          ]
+        },
+        "parameters": {},
+        "output_flags": {
+          "real": [
+            "Line"
+          ]
+        },
+        "output_names": [
+          "real"
+        ]
+      },
+      "integer_outputs": [
+        false
+      ]
+    }
+  }
+}

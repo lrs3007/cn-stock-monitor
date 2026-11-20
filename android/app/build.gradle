@@ -1,0 +1,72 @@
+plugins { id 'com.android.application'; id 'com.chaquo.python' }
+
+def signing = new Properties()
+def signingFile = rootProject.file('signing.properties')
+if (signingFile.exists()) signingFile.withInputStream { signing.load(it) }
+
+android {
+    namespace 'cn.guanlan.monitor'
+    compileSdk 36
+    testBuildType 'release'
+    ndkVersion '28.2.13676358'
+    defaultConfig {
+        applicationId 'cn.guanlan.monitor'
+        minSdk 26
+        targetSdk 36
+        versionCode 4
+        versionName '0.3.1'
+        ndk { abiFilters 'arm64-v8a' }
+        externalNativeBuild { cmake { arguments '-DANDROID_SUPPORT_FLEXIBLE_PAGE_SIZES=ON' } }
+        testInstrumentationRunner 'android.test.InstrumentationTestRunner'
+    }
+    signingConfigs {
+        if (signingFile.exists()) {
+            localRelease {
+                storeFile rootProject.file(signing['storeFile'])
+                storePassword signing['storePassword']
+                keyAlias signing['keyAlias']
+                keyPassword signing['keyPassword']
+            }
+        }
+    }
+    buildTypes {
+        release {
+            if (signingFile.exists()) signingConfig signingConfigs.localRelease
+            minifyEnabled false
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    lint { abortOnError true }
+    externalNativeBuild { cmake { path '../native/CMakeLists.txt'; version '3.22.1' } }
+    packaging { jniLibs { useLegacyPackaging true } }
+    sourceSets { main { assets.srcDir layout.buildDirectory.dir('generated/sharedAssets') } }
+}
+chaquopy {
+    defaultConfig {
+        version = '3.12'
+        buildPython rootProject.file('../.venv312/bin/python').absolutePath
+        pip { install '-r', rootProject.file('requirements.txt').absolutePath }
+    }
+    sourceSets { getByName('main') { srcDirs = [layout.buildDirectory.dir('generated/sharedPython').get().asFile] } }
+}
+def sharedWeb = tasks.register('syncSharedWeb', Sync) {
+    from(rootProject.file('../web'))
+    from(rootProject.file('native/ta-lib/LICENSE')) { into 'licenses'; rename { 'TA-Lib.txt' } }
+    from(rootProject.file('../backend/vendor/AKShare-LICENSE')) { into 'licenses'; rename { 'AKShare.txt' } }
+    into(layout.buildDirectory.dir('generated/sharedAssets/web'))
+}
+def sharedPython = tasks.register('syncSharedPython', Sync) {
+    from(rootProject.file('..')) { include 'backend/*.py', 'backend/*.json', 'backend/vendor/*LICENSE'; exclude 'backend/mobile.py' }
+    into(layout.buildDirectory.dir('generated/sharedPython'))
+}
+tasks.configureEach { task ->
+    if ((task.name.startsWith('merge') && task.name.endsWith('Assets')) || task.name.toLowerCase().contains('lint')) task.dependsOn sharedWeb
+    if (task.name.toLowerCase().contains('python') && task.name != 'syncSharedPython') task.dependsOn sharedPython
+}
+dependencies {
+    testImplementation 'junit:junit:4.13.2'
+    androidTestCompileOnly files("${android.sdkDirectory}/platforms/android-36/optional/android.test.runner.jar", "${android.sdkDirectory}/platforms/android-36/optional/android.test.base.jar")
+}

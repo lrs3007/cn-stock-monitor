@@ -1,0 +1,17 @@
+.venv*/
+__pycache__/
+.pytest_cache/
+*.pyc
+.env
+data/
+.DS_Store
+*.log
+.toolchain/
+dist/
+android/.gradle/
+android/**/build/
+android/**/.cxx/
+android/local.properties
+android/signing.properties
+*.jks
+*.keystore
